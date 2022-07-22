@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Assignment 2</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card{
+            display:flex;
+            flex-direction: column;
+            padding: 30px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+            justify-content: space-evenly;
+        }
+        .customerInfo{
+            display: flex;
+        }
+        .icon{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin: 5px;
+            padding: 5px;
+            object-fit: cover; 
+        }
+        .reviewContainer{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .userName{
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .rating{
+            height: 20px;
+            width: 80px;
+        }
+        .customerReview{
+            font-style: italic;
+            font-size: 12px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="customerInfo">
+            <img src="https://sigmaschool.co/assets/team/jing-yong.jpg" alt="Jing Yong profile" class="icon">
+            <div class="reviewContainer">
+                <div class="userName">
+                    Chua Jing Yong
+                </div>
+                <img src="https://static.vecteezy.com/system/resources/previews/003/355/389/original/five-5-star-rank-sign-illustration-free-vector.jpg" alt="5 star rating" class="rating">
+            </div>
+        </div>
+
+        <div class="customerReview">
+            "When we strive to become better than we are, everything around us becomes better too." ~Paulo Coelho
+        </div>
+    </div>
+</body>
+</html>
