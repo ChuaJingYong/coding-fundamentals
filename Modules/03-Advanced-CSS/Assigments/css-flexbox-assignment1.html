@@ -1,0 +1,266 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Assignment 1</title>
+    <style>
+        
+        body{
+            background-color: whitesmoke;
+            font-family: Plusjakartadisplay, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: #04121f;
+            height: 40vh;
+            padding: 50px;
+            display: flex;
+            
+            color: white;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .blog{
+            height: 30vh;
+            width: 40vw;
+        }
+        .blog>h1{
+            font-size: 50px;
+            font-weight:bold;
+        }
+        .blog>p{
+            font-size: 16px;
+        }
+        .image{
+            height:250px;
+            width: 400px;
+            /* overflow: hidden; */
+            display: inline-block;
+            object-fit: cover;
+            /* background-size: auto; */
+            flex-shrink: 0;
+            border-radius: 10px;
+        }
+
+        /* For cards */
+        main{
+            padding: 50px;
+            display: flex;
+            background: whitesmoke;
+            justify-content: space-evenly;
+        }
+        .card{
+            background-color: whitesmoke;
+            height: 60vh;
+            display: flex;
+            /* margin: 5vh 2vw 2vh 2vw;  */
+            /* top | right | bottm | left, clockwise direction starting from 12am */
+            flex-direction:column;
+            align-items: 10px;
+            justify-content: space-between;
+            border-bottom: 1px solid lightgray;
+        }
+        .card>.image{
+            /* height: 35vh; */
+            width: 25vw;
+            border-radius: 10px;
+        }
+
+        @media(max-width:960px){
+            header{
+            height: 50vh;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            justify-content: space-evenly;
+        }
+        .image{
+            height:30vh;
+            width: 50vw;
+            margin: 10px;
+            object-fit: cover;
+        }
+        /* For cards */
+        main{
+            padding: 50px;
+            display: flex;
+            background: whitesmoke;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .card{
+            background-color: whitesmoke;
+            height: 45vh;
+            display: flex;
+            padding: 10px;
+            /* margin: 5vh 2vw 2vh 2vw;  */
+            /* top | right | bottm | left, clockwise direction starting from 12am */
+            flex-direction:column;
+            justify-content: space-between;
+            border-bottom: 1px solid lightgray;
+            align-items: center;
+            align-self: center;
+        }
+        .card>.image{
+            width: 60vw;
+            border-radius: 10px;
+        }
+        .author{
+            display: flex;
+            width: 25vw;
+            padding:10px;
+            margin-bottom: 10px;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 11px;
+        }
+    }
+
+        ul{
+            list-style-type: none;
+            display: flex;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            font-size: 12px;
+            padding: 5px 10px;
+            margin: 5px;
+            color: whitesmoke;
+            background-color: blueviolet;
+            border-radius: 20px;
+            height: 15px;
+        }
+        .title{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .author{
+            display: flex;
+            width: 25vw;
+            padding: 0px;
+            margin-bottom: 10px;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 11px;
+        }
+        .logo{
+            border-radius: 50%;
+            width: 30px;
+        }
+        .center{
+            flex: 2;
+        }
+        .name{
+            padding: 5px;
+            flex:2
+        }
+        .dateCreated{
+            padding: 5px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="blog">
+            <h1>Our Blogs</h1>
+            <p>Read about character guides, walkthroughs, and topics that will help you in your open world exploration journey in Hoyoverse!</p>
+        </div>
+        <img class="image" src="https://staticg.sportskeeda.com/editor/2022/02/3d7e1-16448620811997-1920.jpg" alt="Typewriter image">
+    </header>
+
+    <main>
+        <div class="card">
+            <img class="image" src="https://images5.alphacoders.com/120/1204046.jpg" alt="Genshin Impact release">
+            <div class="topics">
+                <ul>
+                    <li>
+                        Genshin Impact
+                    </li>
+                    <li>
+                        Open World Exploration
+                    </li>
+                </ul>
+            </div>
+
+            <div class="title">
+                Genshin Impact Archon arc
+            </div>
+            
+            <div class="author">
+                <img src="https://webstatic.hoyoverse.com/upload/op-public/2022/02/08/1c77d507474b5a773ef9741ff9d840f0_41105170377216510.jpeg" alt="Paimon" class="logo">
+                <div class="name">
+                    Hovoverse
+                </div>
+                <div class="dateCreated">
+                    22/07/2022 01:50AM
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="image" src="https://d3fd5j8wprxn3h.cloudfront.net/wp-content/uploads/2022/05/Honkai-Impact-3rd-Featured--710x400.jpg" alt="Honkai Impact release">
+            <div class="topics">
+                <ul>
+                    <li>
+                        Honkai Impact 3
+                    </li>
+                    <li>
+                        Hack and Slash
+                    </li>
+                </ul>
+            </div>
+
+            <div class="title">
+                Honkai Impact releases 3 new characters!
+            </div>
+            <div class="author">
+                <img src="https://play-lh.googleusercontent.com/ycPyDOz7dAyn9NJnRTUkYsLkYQEOw1s3_yy9_s5qRDq5lHGz3N5_rrGMQsChjzdAfeQ" alt="Paimon" class="logo">
+                <div class="name">
+                    Hoyoverse
+                </div>
+                <div class="dateCreated">
+                    22/07/2022 01:50AM
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <img class="image" src="https://cdn.mos.cms.futurecdn.net/2gdKwEBREHDQ5DJaKrbSZJ.jpg" alt="Starrail release">
+            <div class="topics">
+                <ul>
+                    <li>
+                        Starrail
+                    </li>
+                    <li>
+                        Turn-based RPG
+                    </li>
+                </ul>
+            </div>
+
+            <div class="title">
+                Starrail coming soon?
+            </div>
+            <div class="author">
+                <img src="https://webstatic.hoyoverse.com/upload/op-public/2022/02/08/4129763f1dbaacf5f84e6f78c1b8d355_6722088918614682994.jpeg" alt="No idea" class="logo">
+                <div class="name">
+                    Hoyoverse
+                </div>
+                <div class="dateCreated">
+                    22/07/2022 01:50AM
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
