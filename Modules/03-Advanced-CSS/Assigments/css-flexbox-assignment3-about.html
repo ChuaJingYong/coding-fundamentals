@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 About</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: whitesmoke;
+        }
+        main{
+            background: rgb(56, 52, 52);
+            height: 70.5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: aliceblue;
+        }
+        footer{
+            height: 30vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .websiteLinks{
+            display: flex;
+            padding-right: 0px;
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        li{
+            margin: 20px;
+        }
+        a:link, a:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+        .websiteLink2{
+            margin-left:0px;
+            padding-left: 0;
+        }
+        .socialLinks{
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+        img{
+            width: 30px;
+            justify-content: space-evenly;
+            
+        }
+        .copyright{
+            margin: 10px 0 0 0 ;
+        }
+        @media (max-width:550px){
+            ul{
+                height: 6vh;
+                width: 560px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                padding: 5px;
+            }
+            .websiteLinks{
+                flex-direction: column;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        About page
+    </main>
+    <footer>
+        <div class="websiteLinks">
+            <ul>
+                <a href="./css-flexbox-assignment3-about.html"><li>About</li></a>
+                <a href="./css-flexbox-assignment3-blog.html"><li>Blog</li></a>
+                <a href="./css-flexbox-assignment3-jobs.html"><li>Jobs</li></a>
+                <li>Press</li>
+            </ul>
+            <ul class="websiteLinks2">
+                <li>Accesibility</li>
+                <li>Partners</li>
+            </ul>
+        </div>
+
+        <div class="socialLinks">
+            <a href="https://www.facebook.com/chua.jingyong.1/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/725/725289.png" alt="Facebook link" class="facebook" ></a>
+            <a href="https://www.instagram.com/cjyong98/?hl=en" target="blank"><img src="https://cdn-icons-png.flaticon.com/512/725/725278.png" alt="Instagram link" class="instagram"></a>
+            <a href="https://s.muz.li/NTg2MmY5YmVh" target="blank"><img src="https://cdn-icons.flaticon.com/png/512/2335/premium/2335289.png?token=exp=1658515046~hmac=627917b7a3415292297a58ded5e11637" alt="Twitter link" class="twitter"></a>
+            <a href="https://github.com/ChuaJingYong" target="blank"><img src="https://cdn-icons-png.flaticon.com/512/1322/1322053.png" alt="GitHub link" class="github"></a>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2022 Workflow, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
