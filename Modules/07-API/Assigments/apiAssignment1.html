@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Assignment 1</title>
+    <style>
+        .quote-card{
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-section{
+            padding: 0 10px;
+            border: 1px solid grey;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        
+
+        .quote-content{
+            display: flex;
+        }
+        .quote-author{
+            color: grey;
+        }
+
+        .bottom-section{
+            border: 1px solid grey;
+            padding: 10px 20px;
+            border-top: none;
+            background-color: #e5e5e5;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .new-quote-button{
+            background-color: rgb(255, 117, 143);
+            padding: 5px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 0 10px rgb(255, 117, 143,0.6);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quote-card">
+        <div class="top-section">
+            <div class="quote-container">
+                <p class="quote-content">
+                    <!-- This is a random quote generator -->
+                </p>
+                <p class="quote-author">
+                    <!-- ~Jing Yong, yours truly ;) -->
+                </p>
+            </div>
+        </div>
+
+        <div class="bottom-section">
+            <button class="new-quote-button">
+                New Quote
+            </button>
+        </div>
+    </div>
+    <script src="./apiAssignment1.js"></script>
+</body>
+
+</html>
