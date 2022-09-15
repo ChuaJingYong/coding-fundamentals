@@ -1,0 +1,70 @@
+/* Custom variables. Always need to start with double dash -- */
+:root{
+    --primary-blue: #00a8e8;
+    --secondary-gray: #e5e5e5b4;
+    --tertiary-blue: #caf0f8;
+    --bg-black:#14213d;
+    /* font sizes */
+    --text-sm: 0.875rem;
+    --text-base:1rem;
+    --text-lg:1.125rem;
+    --text-xl:1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl:3rem;
+    --text-6xl: 3.75rem;
+    --text-7xl: 4.5rem;
+}
+/* General Styles */
+html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: var(--bg-black);
+    color: var(--secondary-gray);
+}
+
+.highlight{
+    color: #00a8e8;
+}
+
+h1{
+    color: #caf0f8;
+}
+
+
+/* Remove Default Styles */
+*{
+    /* star symbol means to refer to everything in html */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Auto align in middle */
+main{
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+/* Large */
+@media (min-width:768px){
+    main{
+        max-width: 32rem;
+    }
+}
+
+/* XL */
+@media (min-width:1024px){
+    main{
+        max-width: 48rem;
+    }
+}
+
+/* 2XL */
+@media (min-width:1280px){
+    main{
+        max-width: 70rem;
+    }
+}

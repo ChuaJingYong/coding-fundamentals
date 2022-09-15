@@ -1,0 +1,105 @@
+header{
+    display: flex;
+    padding: 2rem 2.5rem;
+    position: sticky;
+    background-color: #14213d;
+    top:0;
+    z-index: 2;
+}
+
+.logo__container{
+    flex: 1;
+}
+
+.logo__icon{
+    height: 3rem;
+    width: 3rem;
+    color: var(--primary-blue);
+}
+
+.mobile__navigation{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.menu__icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--primary-blue);
+}
+
+.navigation__container{
+    /* in larger screen, display it */
+    display: none;
+    color: var(--primary-blue);
+}
+
+.navigation__list{
+    list-style-type: none;
+}
+
+.link__item{
+    list-style-type: none;
+}
+
+.link__name{
+    color: var(--secondary-gray);
+    text-decoration: none;
+}
+
+.link__name:hover {
+    color: var(--primary-blue);
+}
+
+.navigation__links{
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;
+}
+/*  This selector "* + *" means that we only want to apply the effects to the elements that are in between  */
+.navigation__links>* + *{
+    margin-left: 2.5rem;
+}
+
+.resume__link{
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    border-radius: 0.375rem;
+    align-self: center;
+}
+
+.resume__link:hover{
+    color: #14213d;
+    background-color: var(--primary-blue);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.underline{
+    border-bottom-width: 0;
+    background-image: linear-gradient(var(--primary-blue),var(--primary-blue));
+    background-size: 0 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+}
+
+.underline:hover{
+    background-size: 100% 2px;
+    background-position: 0 100%;
+}
+
+/* min-width = when we want to start applying the styling changes */
+@media (min-width:768px){
+    .navigation__container{
+        display: flex;
+    }
+
+    .mobile__navigation{
+        display: none;
+    }
+}
